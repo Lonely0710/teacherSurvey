@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/teacherSurvey/static/css/main.9c6cbe88.css",
+    "main.js": "/teacherSurvey/static/js/main.14918b6f.js",
+    "static/js/453.f165ae8c.chunk.js": "/teacherSurvey/static/js/453.f165ae8c.chunk.js",
+    "index.html": "/teacherSurvey/index.html",
+    "main.9c6cbe88.css.map": "/teacherSurvey/static/css/main.9c6cbe88.css.map",
+    "main.14918b6f.js.map": "/teacherSurvey/static/js/main.14918b6f.js.map",
+    "453.f165ae8c.chunk.js.map": "/teacherSurvey/static/js/453.f165ae8c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c6cbe88.css",
+    "static/js/main.14918b6f.js"
+  ]
+}
