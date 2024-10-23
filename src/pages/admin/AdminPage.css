@@ -1,0 +1,139 @@
+/* 页面布局 */
+.admin-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+/* 侧边栏样式 */
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #0052cc;
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.sidebar-header h2 {
+    color: #fff;
+    font-weight: 500;
+    margin-left: -10px;
+}
+
+/* 为管理后台标题添加图标 */
+.sidebar-header .admin-icon {
+    font-size: 24px;
+    color: #fff;
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    margin: 25px 0;
+    cursor: pointer;
+}
+
+.sidebar-menu li button {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 18px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.sidebar-menu li button:hover {
+    background-color: #0041a3;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* 高亮选中菜单项的样式 */
+.sidebar-menu li.active button {
+    background-color: #0041a3;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.menu-icon {
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.menu-icon1 {
+    margin-right: 18px;
+    font-size: 24px;
+}
+
+.menu-icon2 {
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+.menu-icon3 {
+    margin-right: 18px;
+    font-size: 22px;
+}
+
+.menu-icon4 {
+    margin-right: 14px;
+    font-size: 22px;
+}
+/* 返回按钮样式 */
+.back-button {
+    margin-top: 30px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #ff4949;
+}
+
+.back-button .back-icon {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* 主内容区域样式 */
+.main-content {
+    margin-left: 250px;
+    padding: 40px;
+    width: calc(100% - 250px);
+    background-color: #f4f4f9;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

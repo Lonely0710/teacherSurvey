@@ -1,0 +1,66 @@
+/* 日志查询模块样式 */
+.logs-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    width: 100%;
+}
+
+.logs-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.logs-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.logs-table th,
+.logs-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.logs-table th {
+    background-color: #0052cc;
+    color: white;
+}
+
+.logs-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.logs-table td {
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .logs-container {
+        padding: 10px;
+    }
+
+    .logs-table th,
+    .logs-table td {
+        padding: 8px;
+    }
+}
+
+.search-filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-filters input,
+.search-filters select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

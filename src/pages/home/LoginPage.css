@@ -1,0 +1,95 @@
+/* 页面主容器 */
+.login-container {
+    text-align: center;
+    /* 居中对齐 */
+    margin-top: 50px;
+}
+
+/* 大标题样式 */
+.main-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #0052cc;
+    margin-bottom: 10px;
+}
+
+/* 定位信息样式 */
+.location {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* 登录页面容器 */
+.login-page {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 输入框样式 */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* 按钮样式 */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0052cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0041a3;
+}
+
+/* 错误提示样式 */
+.error {
+    color: #e74c3c;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.input-group {
+    display: flex;
+    /* 使用flex布局 */
+    align-items: center;
+    /* 垂直居中对齐 */
+    margin: 10px 0;
+    /* 输入框的上下间距 */
+}
+
+.input-icon {
+    margin-right: 10px;
+    /* 图标与输入框之间的间距 */
+    color: #666;
+    /* 图标颜色 */
+}
+
+input[type="text"],
+input[type="password"] {
+    flex: 1;
+    /* 使输入框占据剩余空间 */
+    padding: 12px;
+    /* 输入框内边距 */
+    box-sizing: border-box;
+    /* 包含边框和内边距 */
+    border-radius: 4px;
+    /* 圆角 */
+    border: 1px solid #ccc;
+    /* 边框 */
+}
