@@ -1,0 +1,58 @@
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100vh;
+    /* 让容器占满整个屏幕高度 */
+}
+
+.project-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.project-section,
+.submission-history {
+    flex-grow: 1;
+    /* 让左右两部分自动铺满容器宽度 */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.project-section:last-child {
+    margin-right: 0;
+    /* 去掉最后一项的右边距 */
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+}
+
+.timeline-item div {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-form input,
+.project-form textarea {
+    width: 100%;
+    /* 让表单控件铺满 */
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

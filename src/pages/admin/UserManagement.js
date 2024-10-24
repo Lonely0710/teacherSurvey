@@ -1,12 +1,21 @@
 import React from 'react';
-import './UserManagement.css'; // 引入对应的样式文件
+import { Avatar } from '@douyinfe/semi-ui';
+import { IconUser, IconShield } from '@douyinfe/semi-icons';
+import './UserManagement.css';
 
 const UserManagement = () => {
     const users = [
-        { account: 'user1', name: '李四', role: '教师' },
-        { account: 'user2', name: '张三', role: '教师' },
-        { account: 'admin', name: '王五', role: '管理员' },
+        { account: 'user1', name: '李四', role: '教师', avatarBg: 'light-blue' },
+        { account: 'user2', name: '张三', role: '教师', avatarBg: 'grey' },
+        { account: 'admin', name: '王五', role: '管理员', avatarBg: 'red' },
     ];
+
+    const renderRoleIcon = (role) => {
+        if (role === '教师') {
+            return <IconUser style={{ color: 'green', marginRight: 8 }} />;
+        }
+        return <IconShield style={{ color: 'red', marginRight: 8 }} />;
+    };
 
     return (
         <div className="users-container">
@@ -23,15 +32,23 @@ const UserManagement = () => {
                     {users.map((user, index) => (
                         <tr key={index}>
                             <td>{user.account}</td>
-                            <td>{user.name}</td>
-                            <td>{user.role}</td>
+                            <td>
+                                <Avatar size="small" color={user.avatarBg} style={{ marginRight: 8 }}>
+                                    {user.name[0]}
+                                </Avatar>
+                                {user.name}
+                            </td>
+                            <td>
+                                {renderRoleIcon(user.role)}
+                                {user.role}
+                            </td>
                         </tr>
                     ))}
                 </tbody>
             </table>
             <div className="button-container">
-                <button>添加用户</button>
-                <button>删除用户</button>
+                <button className="small-button">添加用户</button>
+                <button className="small-button">删除用户</button>
             </div>
         </div>
     );

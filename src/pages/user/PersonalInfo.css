@@ -1,0 +1,515 @@
+.info-container {
+    display: flex;
+    /* 使用Flexbox布局 */
+    justify-content: space-between;
+    /* 在主轴上均匀分配空间 */
+    padding: 200px;
+    /* 内边距 */
+    background-color: #f9f9f9;
+    /* 背景颜色 */
+    width: 80%;
+        /* 设置为100%以适应父容器 */
+}
+
+.form-preview-container {
+    display: flex;
+    /* 让表单和预览部分并排显示 */
+    width: 100%;
+    /* 宽度为100% */
+}
+
+/* 信息上传 */
+.info-section {
+    width: 50%;
+    /* 信息上传部分占据较多的宽度 */
+    margin-right: 20px;
+    /* 右侧部分添加右边距 */
+    background-color: #fff;
+    /* 背景颜色 */
+    padding: 30px;
+    /* 内边距 */
+    border-radius: 8px;
+    /* 边框圆角 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* 阴影效果 */
+}
+
+/* 预览部分 */
+.preview-section {
+    width: 40%;
+    /* 预览部分占据较少的宽度 */
+    background-color: #fff;
+    /* 背景颜色 */
+    padding: 20px;
+    /* 内边距 */
+    border-radius: 8px;
+    /* 边框圆角 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* 阴影效果 */
+    background: linear-gradient(to bottom, #e0f7fa 25%, #fff 50%);
+    /* 从上到下，左半淡蓝色，右半白色 */
+    overflow: auto;
+        /* 添加滚动条 */
+}
+
+
+.form-group select {
+    margin-top: 10px;
+    /* 其他样式 */
+}
+
+label {
+    display: block;
+    /* 块级元素 */
+    margin-bottom: 5px;
+    /* 标签与输入框之间的间距 */
+    font-weight: bold;
+    /* 标签加粗 */
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 100%;
+    /* 输入框宽度 */
+    padding: 8px;
+    /* 内边距 */
+    border: 1px solid #ccc;
+    /* 边框 */
+    border-radius: 4px;
+    /* 边框圆角 */
+}
+
+button {
+    padding: 10px 15px;
+    /* 按钮内边距 */
+    background-color: #007bff;
+    /* 按钮背景颜色 */
+    color: white;
+    /* 按钮文字颜色 */
+    border: none;
+    /* 无边框 */
+    border-radius: 4px;
+    /* 按钮边框圆角 */
+    cursor: pointer;
+    /* 鼠标指针样式 */
+}
+
+button:hover {
+    background-color: #0056b3;
+    /* 鼠标悬停时背景颜色 */
+}
+
+.preview-content {
+    display: flex;
+    /* 使用Flexbox布局 */
+    flex-direction: column;
+    /* 垂直方向布局 */
+    align-items: center;
+    /* 内容水平居中 */
+}
+
+.preview-photo {
+    margin-bottom: 20px;
+    /* 头像和信息之间的间距 */
+}
+
+.preview-photo img {
+    width: 100px;
+    /* 头像宽度 */
+    height: 100px;
+    /* 头像高度 */
+    border-radius: 50%;
+    /* 头像为圆形 */
+}
+
+
+.preview-details {
+    text-align: left;
+    /* 信息内容居中对齐 */
+}
+
+.photo-frame {
+    border: 2px solid #007bff;
+    /* 边框颜色 */
+    border-radius: 50%;
+    /* 圆形边框 */
+    padding: 0px;
+    /* 内边距 */
+    display: flex;
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中 */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* 教育经历输入框组 - 学位和学校同排显示 */
+.education-fields {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* 学位选择框和学校输入框的样式 */
+.education-select, /* 学位选择框 */
+.education-input {  /* 学校输入框 */
+    flex: 50; /* 均分父容器的可用空间 */
+    max-width: 100%; /* 设置最大宽度 */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* 学位选择框的宽度稍小一些，灵活调整 */
+.education-select {
+    flex: 1.1; /* 学位选择框占40%的空间 */
+}
+
+/* 学校输入框的宽度稍大 */
+.education-input {
+    flex: 3; /* 学校输入框占60%的空间 */
+}
+
+/* 日期选择输入组 - 入学和毕业日期放在同一行 */
+.date-fields {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* 日期输入框宽度设置 */
+.date-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* 日期范围提示 - 带图标 */
+.date-label {
+    font-weight: bold;
+    margin-right: 2px;
+    display: flex;
+    align-items: center;
+}
+
+/* 日期范围提示中的图标样式 */
+.date-label .fa-icon {
+    margin-right: 100px;
+    /* 图标与文字之间的间距 */
+}
+
+.preview-section h3 {
+    margin-top: 25px;
+    /* 调整标题的上间距 */
+}
+
+
+.education-fields button {
+    padding: 4px 8px;
+    /* 调整内边距以减小按钮大小 */
+    font-size: 14px;
+    /* 调整字体大小 */
+    border: none;
+    /* 去掉默认边框 */
+    background-color: #007bff;
+    /* 设置背景颜色 */
+    color: white;
+    /* 设置文本颜色 */
+    border-radius: 4px;
+    /* 设置圆角 */
+    cursor: pointer;
+    /* 鼠标悬停时显示为手形 */
+    transition: background-color 0.3s;
+    /* 添加过渡效果 */
+}
+
+.education-fields button:hover {
+    background-color: #0056b3;
+    /* 鼠标悬停时的背景颜色 */
+}
+
+/* 限制输入框的宽度 */
+.education-select,
+.education-input {
+    width: 150px;
+    /* 根据需要调整输入框的宽度 */
+    padding: 6px;
+    /* 保持内边距 */
+}
+
+.button-group {
+    display: flex;
+    /* 使按钮在一行显示 */
+    gap: 10px;
+    /* 按钮之间的间距 */
+    margin-top: 10px;
+    /* 在按钮组上方留出一些间距 */
+}
+
+.delete-button {
+    padding: 6px 12px;
+    /* 内边距 */
+    font-size: 16px;
+    /* 字体大小 */
+    border: none;
+    /* 去掉边框 */
+    background-color: #dc3545;
+    /* 背景颜色（红色） */
+    color: white;
+    /* 字体颜色 */
+    border-radius: 4px;
+    /* 圆角 */
+    cursor: pointer;
+    /* 鼠标悬停时显示手形 */
+    transition: background-color 0.3s;
+    /* 添加过渡效果 */
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+    /* 鼠标悬停时的背景颜色 */
+}
+
+.info-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* 每一行之间的间距 */
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    /* 控件之间的间距 */
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+
+}
+
+.education-fields {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.date-fields {
+    display: flex;
+    gap: 10px;
+}
+
+
+/* 确保没有重复的 CSS 规则 */
+
+/* 让头像的占位符和上传的图片尺寸一致 */
+.preview-photo img,
+.placeholder {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* 将照片变为圆形 */
+    object-fit: cover;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+}
+
+/* 浮块样式 */
+.float-block {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* 添加阴影 */
+    margin-bottom: 20px;
+    /* 每个浮块之间有一定间距 */
+    display: flex;
+    justify-content: space-between;
+    /* 姓名和职称放在同一行两边 */
+    align-items: center;
+    /* 使文本在垂直方向上居中 */
+}
+
+/* 优化浮块中的文本显示 */
+.float-block p {
+    margin: 0;
+    /* 取消段落间距 */
+    font-size: 16px;
+    color: #333;
+}
+
+.float-block span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* 美化教育经历表格 */
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.education-table th,
+.education-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.education-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.placeholder-text {
+    color: #aaa;
+    /* 柔和的暗色 */
+    font-size: 1em !important;
+}
+
+.preview-details p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    /* 内边距 */
+    border-radius: 5px;
+    /* 圆角 */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* 背景和阴影的平滑过渡 */
+    font-size: 1em; /* 适当增大字体 */
+    line-height: 1.5; /* 行间距 */
+}
+
+.preview-details p:hover {
+    background-color: rgba(240, 240, 240, 0.8);
+    /* 悬停时的背景色 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /* 悬停时的阴影 */
+}
+
+.preview-details ul {
+    list-style-type: none;
+    /* 去掉默认的列表样式 */
+    padding-left: 0;
+    /* 去掉内边距 */
+}
+
+.preview-details li {
+    background-color: rgb(255, 255, 255);
+    /* 淡色背景 */
+    margin: 5px 0;
+    /* 上下间隔 */
+    padding: 8px;
+    /* 内边距 */
+    border-radius: 4px;
+    /* 圆角 */
+}
+
+.preview-details span {
+    margin-right: 8px;
+    /* 图标与文本之间的间距 */
+    font-size: 1.2em;
+    /* 图标大小 */
+}
+
+.preview-details .placeholder {
+    color: gray;
+    /* 灰色字体 */
+    font-style: italic;
+    /* 斜体样式 */
+}
+
+.preview-content {
+    border: 1px solid #ddd;
+    /* 浅色边框 */
+    border-radius: 8px;
+    /* 圆角 */
+    padding: 15px;
+    /* 内边距 */
+    transition: all 0.3s;
+    /* 平滑过渡 */
+}
+
+.preview-content:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* 悬停时阴影效果 */
+}
+
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.education-table tr:hover {
+    background-color: #e6f7ff;
+    /* 鼠标悬停效果 */
+    transition: background-color 0.3s ease;
+}
+
+.education-table tr:hover {
+    background-color: #e6f7ff;
+    /* 鼠标悬停时的背景颜色 */
+    transition: background-color 0.3s ease;
+}
+
+.education-table th,
+.education-table td {
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid #ddd;
+    /* 添加边框 */
+}
+
+.education-table th {
+    background-color: #f4f4f4;
+}

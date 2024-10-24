@@ -64,3 +64,45 @@
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
+.search-filters {
+    display: flex;
+    gap: 10px;
+    /* 组件之间的间距 */
+}
+
+.search-filters .semi-select {
+    min-width: 200px;
+    /* 设置最小宽度 */
+}
+
+.search-filters .semi-date-picker {
+    min-width: 250px;
+    /* 设置最小宽度 */
+    height: 40px;
+    /* 设置高度 */
+}
+
+.log-search-container {
+    background-color: #fff; /* 白底背景 */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-filters {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* 增加间距 */
+}
+
+.date-input, .action-select {
+    width: 150px; /* 增加输入框宽度 */
+    padding: 10px; /* 增加内边距 */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.log-results {
+    margin-top: 20px; /* 增加顶部间距 */
+}
